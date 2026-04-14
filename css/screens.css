@@ -1,0 +1,96 @@
+/* =========================================
+   PAVIO CURTO — screens.css (tablet / desktop)
+   ========================================= */
+
+/* ─── Tablet: 600px+ ──────────────────── */
+@media (min-width: 600px) {
+  :root { --nav-h: 70px; }
+
+  .nav {
+    padding: 0 2rem;
+  }
+  .nav__logo { font-size: 1.65rem; }
+
+  section { padding: 5rem 2.5rem; }
+
+  .hero__cta-group { flex-direction: row; justify-content: center; }
+
+  .band-info__stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .members__list { display: grid; grid-template-columns: 1fr 1fr; }
+
+  .setlist-preview__item { padding: 1.1rem 1.75rem; }
+  .setlist-preview__title { font-size: 1.05rem; }
+}
+
+/* ─── Small Desktop: 900px+ ───────────── */
+@media (min-width: 900px) {
+  :root { --nav-h: 72px; }
+
+  /* Nav: show links inline, hide hamburger */
+  .nav__toggle { display: none; }
+  .nav__menu {
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    transform: none;
+    gap: 2.5rem;
+    backdrop-filter: none;
+    bottom: auto; left: auto; right: auto; top: auto;
+  }
+  .nav__menu a {
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-size: 0.72rem;
+  }
+
+  section { padding: 6rem 4rem; }
+
+  .band-info__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .members__list { grid-template-columns: repeat(4, 1fr); }
+
+  .hero {
+    padding: calc(var(--nav-h) + 3rem) 2rem 4rem;
+  }
+
+  .hero__bg-lines::before { width: 500px; height: 500px; }
+  .hero__bg-lines::after  { width: 800px; height: 800px; }
+
+  .setlist-preview__list { max-width: 680px; }
+  .setlist-preview { text-align: center; }
+  .setlist-preview__list { margin-left: auto; margin-right: auto; }
+}
+
+/* ─── Large Desktop: 1200px+ ─────────── */
+@media (min-width: 1200px) {
+  section { padding: 7rem 6rem; }
+
+  .hero__title { font-size: clamp(5rem, 10vw, 8rem); }
+
+  .band-info__grid { gap: 8rem; }
+
+  .setlist-preview__list { max-width: 760px; }
+
+  /* Wider member cards on desktop */
+  .members__list { gap: 1px; }
+
+  footer { padding: 3rem 6rem; display: flex; align-items: center; justify-content: space-between; }
+  footer .footer__logo { margin-bottom: 0; }
+}
+
+/* ─── XL: 1600px+ ─────────────────────── */
+@media (min-width: 1600px) {
+  :root { --nav-h: 80px; }
+  section { padding: 8rem 10rem; }
+}

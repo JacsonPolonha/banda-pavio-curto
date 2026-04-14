@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pavio Curto — Banda de Rock. Músicas, repertório e cifras." />
+  <meta name="theme-color" content="#080808" />
+  <title>Pavio Curto — Banda de Rock</title>
+
+  <!-- Fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- CSS -->
+   <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/repertorio.css" />
+  <link rel="stylesheet" href="css/screens.css" />
+  <link rel="stylesheet" href="css/cifra.css">
+</head>
+<body>
+
+  <!-- ═══ NAV ═══════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Navegação principal">
+    <a href="index.html" class="nav__logo" aria-label="Pavio Curto — Início">
+      Pavio <span>Curto</span>
+    </a>
+    <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__menu" id="mainMenu" role="menu">
+      <a href="index.html" role="menuitem">Início</a>
+      <a href="pages/repertorio.html" role="menuitem">Repertório</a>
+      <a href="#banda" role="menuitem">A Banda</a>
+      <a href="#contato" role="menuitem">Contato</a>
+    </div>
+  </nav>
+
+  <!-- ═══ PAGE WRAPPER ══════════════════════════ -->
+  <div class="page-wrapper">
+
+    <!-- ─── HERO ─────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__bg-lines" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Rock Roll · Desde 2026</p>
+        <h1 class="hero__title" id="hero-title">
+          Pavio<br /><em>Curto</em>
+        </h1>
+        <p class="hero__subtitle">
+          "Onde o riff termina e o caos começa."
+        </p>
+        <div class="hero__cta-group">
+          <a href="pages/repertorio.html" class="btn btn--primary">
+            ♩ Ver Repertório
+          </a>
+          <a href="#banda" class="btn btn--outline">
+            A Banda
+          </a>
+        </div>
+        <div class="hero__divider" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ─── BAND INFO ─────────────────────────── -->
+    <section class="band-info" id="banda" aria-labelledby="banda-title">
+      <div class="band-info__grid">
+        <div class="band-info__text reveal">
+          <p class="section__label">A Banda</p>
+          <h2 class="section__title" id="banda-title">Combustão<br />Controlada</h2>
+          <p class="section__desc">
+            Formada nas garagens do subúrbio, a Pavio Curto carrega nos dedos o peso do rock
+            pesado e a raiva do cotidiano. Som cru, letras sem filtro e energia que explode
+            a cada apresentação.
+          </p>
+        </div>
+        <div class="band-info__stats stagger" aria-label="Estatísticas da banda">
+          <div class="stat-item">
+            <span class="stat-item__number">47</span>
+            <span class="stat-item__label">Músicas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__number">6</span>
+            <span class="stat-item__label">Anos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__number">120+</span>
+            <span class="stat-item__label">Shows</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__number">3</span>
+            <span class="stat-item__label">EPs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── MEMBROS ───────────────────────────── -->
+    <section class="members" aria-labelledby="members-title">
+      <p class="section__label">Formação</p>
+      <h2 class="section__title" id="members-title">A Tropa</h2>
+      <ul class="members__list stagger" aria-label="Membros da banda">
+        <li class="member-card">
+          <div>
+            <div class="member-card__name">Rodrigo Cruz</div>
+            <div class="member-card__role">Vocal / Guitarra</div>
+          </div>
+          <span class="member-card__icon" aria-hidden="true">🎸</span>
+        </li>
+        <li class="member-card">
+          <div>
+            <div class="member-card__name">Felipe Nantes</div>
+            <div class="member-card__role">Guitarra Lead</div>
+          </div>
+          <span class="member-card__icon" aria-hidden="true">🎸</span>
+        </li>
+        <li class="member-card">
+          <div>
+            <div class="member-card__name">Bruno Alves</div>
+            <div class="member-card__role">Baixo</div>
+          </div>
+          <span class="member-card__icon" aria-hidden="true">🎵</span>
+        </li>
+        <li class="member-card">
+          <div>
+            <div class="member-card__name">Tiago Motta</div>
+            <div class="member-card__role">Bateria</div>
+          </div>
+          <span class="member-card__icon" aria-hidden="true">🥁</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ─── SETLIST PREVIEW ───────────────────── -->
+    <section class="setlist-preview" aria-labelledby="setlist-title">
+      <p class="section__label">Repertório</p>
+      <h2 class="section__title reveal" id="setlist-title">Algumas<br />Faixas</h2>
+      <ul class="setlist-preview__list stagger" aria-label="Prévia do repertório">
+        <li class="setlist-preview__item">
+          <span class="setlist-preview__num">01</span>
+          <span class="setlist-preview__title">Explosão em Câmera Lenta</span>
+          <span class="setlist-preview__bar" aria-hidden="true"></span>
+        </li>
+        <li class="setlist-preview__item">
+          <span class="setlist-preview__num">02</span>
+          <span class="setlist-preview__title">Carvão nos Dentes</span>
+          <span class="setlist-preview__bar" aria-hidden="true"></span>
+        </li>
+        <li class="setlist-preview__item">
+          <span class="setlist-preview__num">03</span>
+          <span class="setlist-preview__title">O Último Cigarro</span>
+          <span class="setlist-preview__bar" aria-hidden="true"></span>
+        </li>
+        <li class="setlist-preview__item">
+          <span class="setlist-preview__num">04</span>
+          <span class="setlist-preview__title">Noite de Cão</span>
+          <span class="setlist-preview__bar" aria-hidden="true"></span>
+        </li>
+        <li class="setlist-preview__item">
+          <span class="setlist-preview__num">05</span>
+          <span class="setlist-preview__title">Sinal Fechado</span>
+          <span class="setlist-preview__bar" aria-hidden="true"></span>
+        </li>
+      </ul>
+      <div class="setlist-preview__cta reveal">
+        <a href="pages/repertorio.html" class="btn btn--primary">
+          ♩ Repertório Completo
+        </a>
+      </div>
+    </section>
+
+    <!-- ─── CONTATO ───────────────────────────── -->
+    <section id="contato" style="border-top: 1px solid var(--border); background: var(--bg-2);">
+      <p class="section__label">Contato</p>
+      <h2 class="section__title reveal">Fechar Cachê</h2>
+      <p class="section__desc reveal" style="transition-delay:0.1s;">
+        Shows, eventos e festas — manda mensagem.<br />
+        A fagulha a gente coloca.
+      </p>
+      <div style="margin-top: 2rem;" class="reveal" style="transition-delay:0.2s;">
+        <a href="mailto:contato@paviocurto.com.br" class="btn btn--outline">
+          ✉ contato@paviocurto.com.br
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══════════════════════════════ -->
+    <footer>
+      <div class="footer__logo">Pavio <span>Curto</span></div>
+      <p class="footer__copy">© 2024 Pavio Curto · Todos os direitos reservados</p>
+    </footer>
+
+  </div><!-- /.page-wrapper -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>

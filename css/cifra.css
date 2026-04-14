@@ -1,0 +1,301 @@
+/* =========================================
+   PAVIO CURTO — cifra.css
+   Estilo específico para páginas de letras cifradas
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --cifra-chord-color: #e05c4a;
+  --cifra-chord-hover: #ff7a68;
+  --cifra-section-color: #b8860b;
+  --cifra-line-h: 1.9;
+  --cifra-font: 'Courier Prime', 'Courier New', monospace;
+  --cifra-mono: 'Share Tech Mono', monospace;
+}
+
+/* ─── Song Header ────────────────────── */
+.song-header {
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: calc(var(--nav-h) + 2.5rem) 1.5rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+.song-header__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 50% 70% at 10% 50%, rgba(192,57,43,0.12) 0%, transparent 60%),
+    linear-gradient(135deg, #0a0303 0%, var(--bg) 100%);
+  z-index: 0;
+}
+.song-header__content { position: relative; z-index: 1; }
+.song-header__back {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  transition: color 0.2s;
+}
+.song-header__back:hover { color: var(--accent); }
+.song-header__back::before { content: '←'; font-size: 0.9em; }
+
+.song-header__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 9vw, 4.5rem);
+  line-height: 0.92;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  text-shadow: 0 0 30px rgba(192,57,43,0.25);
+}
+.song-header__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.song-header__tag {
+  font-family: var(--cifra-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.song-header__tag strong { color: var(--gold-light); }
+
+/* ─── Cifra Controls ─────────────────── */
+.cifra-controls {
+  padding: 1rem 1.5rem;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.transpose-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.transpose-label {
+  font-family: var(--cifra-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.transpose-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 28px; height: 28px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+  font-family: var(--cifra-mono);
+}
+.transpose-btn:hover { background: var(--surface-2); border-color: var(--accent); color: var(--accent); }
+.transpose-display {
+  font-family: var(--cifra-mono);
+  font-size: 0.8rem;
+  color: var(--cifra-chord-color);
+  min-width: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.font-size-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+.font-size-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-family: var(--cifra-mono);
+  font-size: 0.78rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
+  transition: color 0.15s, background 0.15s;
+}
+.font-size-btn:hover { color: var(--accent); background: var(--surface); }
+.font-size-btn.active { color: var(--accent); }
+
+/* ─── Cifra Body ─────────────────────── */
+.cifra-body {
+  padding: 2.5rem 1.5rem;
+  max-width: 820px;
+}
+
+/* Nota de tom */
+.cifra-key-note {
+  font-family: var(--cifra-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cifra-key-note span { color: var(--gold-light); }
+
+/* Seção da música (Intro, Verso, Refrão...) */
+.song-section {
+  margin-bottom: 2.5rem;
+}
+.song-section__name {
+  font-family: var(--cifra-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--cifra-section-color);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.song-section__name::after {
+  content: '';
+  flex: 1;
+  max-width: 80px;
+  height: 1px;
+  background: linear-gradient(to right, var(--cifra-section-color), transparent);
+  opacity: 0.4;
+}
+
+/* Bloco de linha cifrada */
+.chord-block {
+  display: block;
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+
+/* Linha de acordes */
+.chord-line {
+  font-family: var(--cifra-font);
+  font-size: var(--cifra-size, 0.9rem);
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--cifra-chord-color);
+  letter-spacing: 0.05em;
+  white-space: pre;
+  display: block;
+  user-select: all;
+}
+.chord-line .chord {
+  display: inline-block;
+  cursor: default;
+  transition: color 0.15s, text-shadow 0.15s;
+  position: relative;
+}
+.chord-line .chord:hover {
+  color: var(--cifra-chord-hover);
+  text-shadow: 0 0 10px rgba(224,92,74,0.5);
+}
+
+/* Linha de letra */
+.lyric-line {
+  font-family: var(--cifra-font);
+  font-size: var(--cifra-size, 0.95rem);
+  font-style: italic;
+  color: var(--text);
+  line-height: var(--cifra-line-h);
+  white-space: pre-wrap;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+/* Linha só de letra (sem cifra acima) */
+.lyric-line--solo {
+  font-style: normal;
+  color: var(--text-muted);
+  font-size: calc(var(--cifra-size, 0.95rem) * 0.95);
+}
+
+/* Linhas de comentário / instrução */
+.song-comment {
+  font-family: var(--cifra-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-style: normal;
+  letter-spacing: 0.05em;
+  margin: 0.6rem 0;
+  display: block;
+}
+
+/* Separador entre seções */
+.song-section-sep {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+  opacity: 0.5;
+}
+
+/* ─── Chord Tooltip ──────────────────── */
+.chord[data-diagram] { cursor: pointer; }
+.chord[data-diagram]:hover::after {
+  content: attr(data-diagram);
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  color: var(--text-muted);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ─── Font size variants ─────────────── */
+.cifra-body.size-sm { --cifra-size: 0.82rem; }
+.cifra-body.size-md { --cifra-size: 0.95rem; }
+.cifra-body.size-lg { --cifra-size: 1.1rem;  }
+.cifra-body.size-xl { --cifra-size: 1.3rem;  }
+
+/* ─── Responsive ─────────────────────── */
+@media (min-width: 600px) {
+  .song-header { padding: calc(var(--nav-h) + 3rem) 2.5rem 3rem; }
+  .cifra-controls { padding: 1rem 2.5rem; }
+  .cifra-body { padding: 3rem 2.5rem; }
+  .chord-line, .lyric-line { font-size: var(--cifra-size, 1rem); }
+}
+@media (min-width: 900px) {
+  .song-header { padding: calc(var(--nav-h) + 3.5rem) 4rem 3.5rem; }
+  .cifra-controls { padding: 1rem 4rem; }
+  .cifra-body { padding: 4rem 4rem; }
+  .cifra-body.size-md { --cifra-size: 1rem; }
+  .cifra-body.size-lg { --cifra-size: 1.18rem; }
+}
+@media (min-width: 1200px) {
+  .song-header { padding: calc(var(--nav-h) + 4rem) 6rem 4rem; }
+  .cifra-controls { padding: 1.25rem 6rem; }
+  .cifra-body { padding: 4rem 6rem; max-width: 960px; }
+}

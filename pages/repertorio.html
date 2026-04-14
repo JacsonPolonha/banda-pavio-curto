@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Repertório completo da Pavio Curto — letras e cifras de todas as músicas." />
+  <title>Repertório — Pavio Curto</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="../css/mobile.css" />
+  <link rel="stylesheet" href="../css/screens.css" />
+  <link rel="stylesheet" href="../css/repertorio.css" />
+</head>
+<body>
+
+  <!-- ═══ NAV ═══════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Navegação principal">
+    <a href="../index.html" class="nav__logo" aria-label="Pavio Curto — Início">
+      Pavio <span>Curto</span>
+    </a>
+    <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__menu" id="mainMenu" role="menu">
+      <a href="../index.html" role="menuitem">Início</a>
+      <a href="repertorio.html" role="menuitem">Repertório</a>
+      <a href="../index.html#banda" role="menuitem">A Banda</a>
+      <a href="../index.html#contato" role="menuitem">Contato</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- ─── HERO ─────────────────────────────── -->
+    <header class="rep-hero" aria-labelledby="rep-title">
+      <div class="rep-hero__bg" aria-hidden="true"></div>
+      <div class="rep-hero__content">
+        <p class="rep-hero__label">Pavio Curto</p>
+        <h1 class="rep-hero__title" id="rep-title">Repertório</h1>
+        <p class="rep-hero__count">12 músicas · Letras &amp; Cifras</p>
+      </div>
+    </header>
+
+    <!-- ─── FILTER ────────────────────────────── -->
+    <div class="rep-filter" role="search">
+      <label for="searchInput" class="sr-only">Buscar música</label>
+      <input
+        type="search"
+        id="searchInput"
+        class="rep-filter__search"
+        placeholder="🔍  Buscar música ou artista..."
+        aria-label="Buscar no repertório"
+      />
+    </div>
+
+    <!-- ─── LISTA ─────────────────────────────── -->
+    <main class="rep-list" aria-label="Lista de músicas">
+
+      <!-- ORIGINAIS -->
+      <div class="cat-divider" aria-label="Categoria: Originais">
+        <span class="cat-divider__label">Originais</span>
+      </div>
+
+      <a href="musicas/explosao.html" class="song-row" aria-label="Explosão em Câmera Lenta — Original">
+        <span class="song-row__num">01</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Explosão em Câmera Lenta</div>
+          <div class="song-row__meta">Original · Tom: Dm · Rock Pesado</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/carvao.html" class="song-row" aria-label="Carvão nos Dentes — Original">
+        <span class="song-row__num">02</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Carvão nos Dentes</div>
+          <div class="song-row__meta">Original · Tom: Em · Hard Rock</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/ultimo-cigarro.html" class="song-row">
+        <span class="song-row__num">03</span>
+        <div class="song-row__info">
+          <div class="song-row__title">O Último Cigarro</div>
+          <div class="song-row__meta">Original · Tom: Am · Rock Alternativo</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/noite-de-cao.html" class="song-row">
+        <span class="song-row__num">04</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Noite de Cão</div>
+          <div class="song-row__meta">Original · Tom: Bm · Rock Pesado</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/sinal-fechado.html" class="song-row">
+        <span class="song-row__num">05</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Sinal Fechado</div>
+          <div class="song-row__meta">Original · Tom: Gm · Punk Rock</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/farelo.html" class="song-row">
+        <span class="song-row__num">06</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Farelo</div>
+          <div class="song-row__meta">Original · Tom: F#m · Grunge</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <!-- COVERS -->
+      <div class="cat-divider" aria-label="Categoria: Covers">
+        <span class="cat-divider__label">Covers</span>
+      </div>
+
+      <a href="musicas/paranoid.html" class="song-row">
+        <span class="song-row__num">07</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Paranoid</div>
+          <div class="song-row__meta">Black Sabbath · Tom: Em · Heavy Metal</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/come-as-you-are.html" class="song-row">
+        <span class="song-row__num">08</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Come As You Are</div>
+          <div class="song-row__meta">Nirvana · Tom: Em · Grunge</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/highway-to-hell.html" class="song-row">
+        <span class="song-row__num">09</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Highway to Hell</div>
+          <div class="song-row__meta">AC/DC · Tom: A · Hard Rock</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/smells-like-teen-spirit.html" class="song-row">
+        <span class="song-row__num">10</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Smells Like Teen Spirit</div>
+          <div class="song-row__meta">Nirvana · Tom: Fm · Grunge</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/iron-man.html" class="song-row">
+        <span class="song-row__num">11</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Iron Man</div>
+          <div class="song-row__meta">Black Sabbath · Tom: B · Heavy Metal</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="musicas/cochise.html" class="song-row">
+        <span class="song-row__num">12</span>
+        <div class="song-row__info">
+          <div class="song-row__title">Cochise</div>
+          <div class="song-row__meta">Audioslave · Tom: Eb · Rock Alternativo</div>
+        </div>
+        <span class="song-row__arrow" aria-hidden="true">→</span>
+      </a>
+
+    </main>
+
+    <!-- ═══ FOOTER ═══════════════════════════════ -->
+    <footer>
+      <div class="footer__logo">Pavio <span>Curto</span></div>
+      <p class="footer__copy">© 2024 Pavio Curto · Todos os direitos reservados</p>
+    </footer>
+
+  </div><!-- /.page-wrapper -->
+
+  <!-- Acessibilidade: sr-only -->
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}</style>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
