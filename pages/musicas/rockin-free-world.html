@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rockin' in the Free World — Neil Young. Letra e cifra completa. Pavio Curto." />
+  <title>Rockin' in the Free World — Pavio Curto</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="../../css/mobile.css" />
+  <link rel="stylesheet" href="../../css/screens.css" />
+  <link rel="stylesheet" href="../../css/cifra.css" />
+
+  <style>
+    /* ── Tablatura ─────────────────────────────────── */
+    .tab-block {
+      margin: 0.75rem 0 1.25rem;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .tab-block pre {
+      font-family: var(--cifra-font);
+      font-size: var(--cifra-size, 0.82rem);
+      line-height: 1.55;
+      color: var(--text-muted);
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      padding: 1rem 1.25rem;
+      border-radius: 2px;
+      white-space: pre;
+      tab-size: 4;
+      min-width: max-content;
+    }
+    .tab-block pre .tab-chord {
+      color: var(--cifra-chord-color);
+      font-weight: 700;
+    }
+    .tab-label {
+      font-family: var(--cifra-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    /* scroll hint no mobile */
+    .tab-block::after {
+      content: '← scroll →';
+      display: block;
+      font-family: var(--cifra-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      color: var(--text-dim);
+      margin-top: 0.3rem;
+      text-align: right;
+    }
+    @media (min-width: 900px) { .tab-block::after { display: none; } }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Navegação principal">
+    <a href="../../index.html" class="nav__logo">Pavio <span>Curto</span></a>
+    <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__menu" id="mainMenu" role="menu">
+      <a href="../../index.html" role="menuitem">Início</a>
+      <a href="../repertorio.html" role="menuitem">Repertório</a>
+      <a href="../../index.html#banda" role="menuitem">A Banda</a>
+      <a href="../../index.html#contato" role="menuitem">Contato</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- ─── SONG HEADER ───────────────────────── -->
+    <header class="song-header" aria-labelledby="song-title">
+      <div class="song-header__bg" aria-hidden="true"></div>
+      <div class="song-header__content">
+        <a href="../repertorio.html" class="song-header__back">Repertório</a>
+        <h1 class="song-header__title" id="song-title">Rockin' in the<br>Free World</h1>
+        <div class="song-header__meta">
+          <span class="song-header__tag">Tom original: <strong>Em</strong></span>
+          <span class="song-header__tag">Estilo: <strong>Rock</strong></span>
+          <span class="song-header__tag">Artista: <strong>Neil Young</strong></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ─── CONTROLS ─────────────────────────── -->
+    <div class="cifra-controls" aria-label="Controles da cifra">
+      <div class="transpose-group" role="group" aria-label="Transposição de tom">
+        <span class="transpose-label">Tom:</span>
+        <button class="transpose-btn" id="transposeDown" aria-label="Diminuir tom">−</button>
+        <span class="transpose-display" id="transposeDisplay" aria-live="polite">Tom</span>
+        <button class="transpose-btn" id="transposeUp" aria-label="Aumentar tom">+</button>
+      </div>
+      <div class="font-size-group" role="group" aria-label="Tamanho do texto">
+        <button class="font-size-btn" data-dir="down" aria-label="Diminuir fonte">A−</button>
+        <button class="font-size-btn active" data-dir="up" aria-label="Aumentar fonte">A+</button>
+      </div>
+    </div>
+
+    <!-- ─── CIFRA ─────────────────────────────── -->
+    <main class="cifra-body size-md" aria-label="Letra e cifra">
+
+      <div class="cifra-key-note">
+        <span>Afinação padrão (E A D G B e)</span>
+        <span>Acordes: <span>Em7 · D · C · G · A5</span></span>
+      </div>
+
+      <!-- ══════════════════════════════════════ -->
+      <!--  PARTE 1                               -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="song-section">
+        <h2 class="song-section__name">Parte 1 — Verso 1</h2>
+
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em7">Em7</span>                   <span class="chord" data-original="D">D</span>  <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">Colours on the street</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em7">Em7</span>           <span class="chord" data-original="D">D</span>  <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">Red white and blue</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em7">Em7</span>                <span class="chord" data-original="D">D</span>  <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">People shufflin' their feet</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em7">Em7</span>                       <span class="chord" data-original="D">D</span>  <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">People sleepin' in their shoes</span>
+        </div>
+
+        <div class="chord-block" style="margin-top:1rem;">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span>                  <span class="chord" data-original="D">D</span>     <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">But there's a warnin' sign on the road ahead</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span>                           <span class="chord" data-original="D">D</span>          <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">There's a lot of people sayin' we'd be better off dead</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span>                 <span class="chord" data-original="D">D</span>        <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">Don't feel like Satan but I'm to them</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span>                 <span class="chord" data-original="D">D</span>     <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">so I try to forget it anyway I can</span>
+        </div>
+      </div>
+
+      <!-- TAB — Riff Em7 D C -->
+      <div class="song-section">
+        <h2 class="song-section__name">Tab — Riff Em7 / D / C</h2>
+        <div class="tab-block" aria-label="Tablatura do riff Em7 D C">
+          <span class="tab-label">Em7 · D · C</span>
+          <pre>
+e|-------0---0--2--2---0--0--0-------------
+B|----3--3-3-3--3--3---1--1--1-------------
+G|----0----0----2--2---0--0--0-------------
+D|-2------------0--0---2--2--3-------------
+A|-2-------------------3--3--3-------------
+E|-0---------------------------------------
+                ↓  ↑   ↓  ↓  ↑</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do riff Em D C">
+          <span class="tab-label">Em · D · C</span>
+          <pre>
+e|-------------------------2--2-----0--0-----
+B|-------------------------3--3-----1--1-----
+G|-------------------------2--2-----0--0-----
+D|-2--2--2--2--2--2--2--2--0--0-----2--2-----
+A|-2--2--2--2--2--2--2--2-----------3--3-----
+E|-0--0--0--0--0--0--0--0--------------------
+   ↓  ↓  ↓  ↓  ↓  ↓  ↓  ↓  ↓  ↓     ↓  ↓</pre>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════ -->
+      <!--  REFRÃO                                -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="song-section">
+        <h2 class="song-section__name">Refrão</h2>
+
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="G">G</span>           <span class="chord" data-original="D">D</span>                  <span class="chord" data-original="C">C</span>     <span class="chord" data-original="Em">Em</span></span>
+          <span class="lyric-line">   Keep on rockin' in the free world    <em style="color:var(--text-dim);font-size:0.85em;">(3x)</em></span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="G">G</span>           <span class="chord" data-original="D">D</span>                  <span class="chord" data-original="C">C</span>     <span class="chord" data-original="Em">Em</span>  <span class="chord" data-original="A5">A5</span></span>
+          <span class="lyric-line">   Keep on rockin' in the free world</span>
+        </div>
+      </div>
+
+      <!-- TAB — Refrão G D C -->
+      <div class="song-section">
+        <h2 class="song-section__name">Tab — Refrão G / D / C / Em</h2>
+        <div class="tab-block" aria-label="Tablatura do refrão">
+          <span class="tab-label">G · D · C</span>
+          <pre>
+e|-3--3---3-3-3--2--2--2-2-2--0--0--0-0-0--
+B|-3--3---3-3-3--3--3--3-3-3--1--1--1-1-1--
+G|-0--0---0-0-0--2--2--2-2-2--0--0--0-0-0--
+D|-0--0---0-0-0--0--0--0-0-0--2--2--2-2-2--
+A|-2--2-----------------------3--3--3-3-3--
+E|-3--3------------------------------------
+   ↓  ↓   ↑ ↓ ↑  ↓  ↓  ↑ ↓ ↑  ↓  ↓  ↑ ↓ ↑</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do final do refrão Em">
+          <span class="tab-label">Em (final)</span>
+          <pre>
+e|------------0-----------------------------
+B|------------0-----------------------------
+G|------------0-----------------------------
+D|--------2---2-----------------------------
+A|-3p2----2---2-----------------------------
+E|-----3--0---0-----------------------------
+          ↓   ↑</pre>
+        </div>
+      </div>
+
+      <!-- TAB — Refrão variação -->
+      <div class="song-section">
+        <h2 class="song-section__name">Tab — Refrão (variação)</h2>
+        <div class="tab-block" aria-label="Tablatura variação do refrão">
+          <span class="tab-label">G · D · C (variação)</span>
+          <pre>
+e|-3--3-3---3-3-3--2--2--2-2-2--0--0--0-0-0
+B|-3--3-3---3-3-3--3--3--3-3-3--1--1--1-1-1
+G|-0--0-0---0-0-0--2--2--2-2-2--0--0--0-0--
+D|-0--0-0---0-0-0--0--0--0-0-0--2--2--2-2-2
+A|-2--2-2-----------------------3--3--3-3-3
+E|-3--3-3----------------------------------
+   ↓  ↑ ↓   ↑ ↓ ↑  ↓  ↓  ↑ ↓ ↑  ↓  ↓  ↑ ↓ ↑</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura última repetição Em A5">
+          <span class="tab-label">Em · A5 (última repetição)</span>
+          <pre>
+e|-----------0-----------------------------
+B|-----------0-----------------------------
+G|-----------0---2-------2-----------------
+D|--------2--2---2-------2-----------------
+A|-3p2----2--2---0-------0-----------------
+E|-----3--0--0-----------------------------
+          ↓  ↑</pre>
+        </div>
+      </div>
+
+      <!-- TAB — Repetição Em D C -->
+      <div class="song-section">
+        <h2 class="song-section__name">Tab — Repetição (Em D C) × 4</h2>
+        <span class="song-comment">// Repetir 4x</span>
+        <div class="tab-block" aria-label="Tablatura repetição Em D C">
+          <span class="tab-label">Em · D · C (× 4)</span>
+          <pre>
+e|------------------------2--X--0--0--0----
+B|------------------------3--X--1--1--1----
+G|------------------------2--X--0--0--0----
+D|-2--2--2--2--2--2--2--2-0--X--2--2--2----
+A|-2--2--2--2--2--2--2--2-------3--3--3----
+E|-0--0--0--0--0--0--0--0------------------
+   ↓  ↓  ↓  ↓  ↓  ↓  ↓  ↓ ↓  ↓  ↑  ↓  ↑</pre>
+        </div>
+      </div>
+
+      <hr class="song-section-sep" />
+
+      <!-- ══════════════════════════════════════ -->
+      <!--  PARTE 1 — VERSO 2                     -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="song-section">
+        <h2 class="song-section__name">Parte 1 — Verso 2</h2>
+
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em7">Em7</span>               <span class="chord" data-original="D">D</span>  <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">I see a woman in the night</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em7">Em7</span>               <span class="chord" data-original="D">D</span>  <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">With a baby in her hand</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em7">Em7</span>               <span class="chord" data-original="D">D</span>  <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">Under an old street light</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em7">Em7</span>            <span class="chord" data-original="D">D</span>  <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">Near a garbage can</span>
+        </div>
+
+        <div class="chord-block" style="margin-top:1rem;">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span></span>
+          <span class="lyric-line">Now she puts the kid away</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="D">D</span>             <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">And she's gone to get a hit</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span>                            <span class="chord" data-original="D">D</span>      <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">She hates her life and what she's done to it</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span>                      <span class="chord" data-original="D">D</span>             <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">That's one more kid that will never go to school</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span>                        <span class="chord" data-original="D">D</span>         <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">Never get to fall in love never get to be cool</span>
+        </div>
+      </div>
+
+      <!-- REFRÃO 2 -->
+      <div class="song-section">
+        <h2 class="song-section__name">Refrão</h2>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="G">G</span>           <span class="chord" data-original="D">D</span>                  <span class="chord" data-original="C">C</span>     <span class="chord" data-original="Em">Em</span></span>
+          <span class="lyric-line">   Keep on rockin' in the free world    <em style="color:var(--text-dim);font-size:0.85em;">(3x)</em></span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="G">G</span>           <span class="chord" data-original="D">D</span>                  <span class="chord" data-original="C">C</span>     <span class="chord" data-original="Em">Em</span>  <span class="chord" data-original="A5">A5</span></span>
+          <span class="lyric-line">   Keep on rockin' in the free world</span>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════ -->
+      <!--  SOLO                                  -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="song-section">
+        <h2 class="song-section__name">Solo</h2>
+        <span class="song-comment">// Em  D  C  (4x) → Em7  D  C  (4x)</span>
+
+        <div class="tab-block" aria-label="Tablatura do solo — parte 1">
+          <span class="tab-label">Solo — parte 1</span>
+          <pre>
+e|-12----12-12--12-----------------------------------
+B|-15b17-17-17--17r-12-----12--12--12-----12--12-----
+G|------------------14b16--16--16r-14b16--16--16r-14-
+D|---------------------------------------------------
+A|---------------------------------------------------
+E|---------------------------------------------------</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do solo — parte 2">
+          <span class="tab-label">Solo — parte 2</span>
+          <pre>
+e|-----------------------------12h16p12--------------
+B|-----------------------12h15----------h15p12-------
+G|-12-11b12r11-----13h14-----------------------h14p13
+D|-------------12~-----------------------------------
+A|---------------------------------------------------
+E|---------------------------------------------------</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do solo — parte 3">
+          <span class="tab-label">Solo — parte 3</span>
+          <pre>
+e|---------------------------------------------------
+B|-----------12-12-----------------------------------
+G|-------13--13-13-----------------------------------
+D|-14p12-----------12~-------------------------------
+A|---------------------------------------------------
+E|---------------------------------------------------</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do solo — parte 4">
+          <span class="tab-label">Solo — parte 4 (slides)</span>
+          <pre>
+e|-------19-------17-------14-------12-------14~-----
+B|-15/17----17\15----15\12----12\10----10/12---------
+G|---------------------------------------------------
+D|---------------------------------------------------
+A|---------------------------------------------------
+E|---------------------------------------------------</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do solo — parte 5">
+          <span class="tab-label">Solo — parte 5</span>
+          <pre>
+e|---------------------------------------------------
+B|---------------------------------------------------
+G|-------16-------14-------16-------14~--------------
+D|-12/14----14\12----12/14----14\12------------------
+A|---------------------------------------------------
+E|---------------------------------------------------</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do solo — parte 6">
+          <span class="tab-label">Solo — parte 6</span>
+          <pre>
+e|-17p12---------------------------------------------
+B|-------17p12---------------------------------------
+G|-------------16p12-------12~-14b16p14-12----12~----
+D|-------------------16p12-----------------16--------
+A|---------------------------------------------------
+E|---------------------------------------------------</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do solo — parte 7">
+          <span class="tab-label">Solo — parte 7</span>
+          <pre>
+e|---------------------------------------------------
+B|-------15-------15-------15-------15-------15------
+G|-12h14----12h14----12h14----12h14----12h14----14---
+D|---------------------------------------------------
+A|---------------------------------------------------
+E|---------------------------------------------------</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do solo — parte 8">
+          <span class="tab-label">Solo — parte 8</span>
+          <pre>
+e|----------------------------------------15---------
+B|-15b17r15p12---15b17~-15/17--17--17-17--17-17-17\15
+G|----------------------14/16--16--16-16--16-16-16\14
+D|---------------------------------------------------
+A|---------------------------------------------------
+E|---------------------------------------------------</pre>
+        </div>
+
+        <div class="tab-block" aria-label="Tablatura do solo — parte 9 (final)">
+          <span class="tab-label">Solo — parte 9 (final)</span>
+          <pre>
+e|---------------------------------------------------
+B|-15----15--15-15-----15-----15--15-----------------
+G|-14b16-16--16-16r14--14b16--16--16r14--------------
+D|-------------------------------------14~-----------
+A|---------------------------------------------------
+E|---------------------------------------------------</pre>
+        </div>
+      </div>
+
+      <hr class="song-section-sep" />
+
+      <!-- ══════════════════════════════════════ -->
+      <!--  VERSO 3 (parte 2)                     -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="song-section">
+        <h2 class="song-section__name">Verso 3</h2>
+
+        <div class="chord-block">
+          <span class="lyric-line--solo lyric-line">We got a thousand points of light</span>
+        </div>
+        <div class="chord-block">
+          <span class="lyric-line--solo lyric-line">For the homeless man</span>
+        </div>
+        <div class="chord-block">
+          <span class="lyric-line--solo lyric-line">We got a kinder, gentler,</span>
+        </div>
+        <div class="chord-block">
+          <span class="lyric-line--solo lyric-line">Machine gun hand</span>
+        </div>
+
+        <div class="chord-block" style="margin-top:1rem;">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span></span>
+          <span class="lyric-line">We got department stores</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="D">D</span>      <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">and toilet paper</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span></span>
+          <span class="lyric-line">Got styrofoam boxes</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="D">D</span>        <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">for the ozone layer</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span></span>
+          <span class="lyric-line">Got a man of the people,</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="D">D</span>          <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">says keep hope alive</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="Em">Em</span></span>
+          <span class="lyric-line">Got fuel to burn,</span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="D">D</span>         <span class="chord" data-original="C">C</span></span>
+          <span class="lyric-line">got roads to drive.</span>
+        </div>
+      </div>
+
+      <!-- REFRÃO FINAL -->
+      <div class="song-section">
+        <h2 class="song-section__name">Refrão Final</h2>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="G">G</span>           <span class="chord" data-original="D">D</span>                  <span class="chord" data-original="C">C</span>     <span class="chord" data-original="Em">Em</span></span>
+          <span class="lyric-line">   Keep on rockin' in the free world    <em style="color:var(--text-dim);font-size:0.85em;">(3x)</em></span>
+        </div>
+        <div class="chord-block">
+          <span class="chord-line"><span class="chord" data-original="G">G</span>           <span class="chord" data-original="D">D</span>                  <span class="chord" data-original="C">C</span>     <span class="chord" data-original="Em">Em</span>  <span class="chord" data-original="A5">A5</span></span>
+          <span class="lyric-line">   Keep on rockin' in the free world</span>
+        </div>
+        <span class="song-comment">// Solo final — repetir sobre Em D C</span>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer__logo">Pavio <span>Curto</span></div>
+      <p class="footer__copy">© 2024 Pavio Curto · Todos os direitos reservados</p>
+    </footer>
+
+  </div>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
